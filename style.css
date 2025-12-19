@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #1f2933;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.hero {
+    background: linear-gradient(135deg, #1f2933, #111827);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    opacity: 0.9;
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+.resume-btn {
+    display: inline-block;
+    background: #facc15;
+    color: #111827;
+    padding: 12px 26px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.resume-btn:hover {
+    background: #eab308;
+}
+
+/* NAV */
+.nav {
+    margin-top: 10px;
+}
+
+.nav a {
+    color: #e5e7eb;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    color: #facc15;
+}
+
+/* SECTIONS */
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-top: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 3px solid #e5e7eb;
+    display: inline-block;
+}
+
+/* SKILLS GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.grid span {
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.company {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* EDUCATION */
+.edu li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #111827;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+}
